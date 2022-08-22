@@ -74,8 +74,7 @@ class _FlutterPainterExampleState extends State<FlutterPainterExample> {
 
   /// background page
   void initBackground() async {
-    final image = await const
-    NetworkImage("https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhbmslMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHw%3D&w=1000&q=80").image;
+    final image = await const AssetImage("images/back_image.jpg").image;
     setState(() {
       backgroundImage = image;
       controller.background = image.backgroundDrawable;
